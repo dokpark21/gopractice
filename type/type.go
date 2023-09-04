@@ -37,7 +37,7 @@ func main() {
 	fmt.Println(b)        //43
 	fmt.Printf("%T\n", b) //main.hotdog === main package에 hotdog type
 
-	//type 변환
+	//type 변환(다른 언어에서는 캐스팅이라 부르지만 go에서는 변환이라고 부른다)
 
 	x = int(b) // hotdog -> int로 변환해 x에 b의 값을 할당한다
 	fmt.Println(x)
