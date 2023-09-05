@@ -24,6 +24,13 @@ func main() {
 	if x := 42; x == 2 {
 		fmt.Println("001")
 	}
-	fmt.Println("here's a statement")
-	fmt.Println("something else")
+
+	y := 42
+	if y == 40 {
+		fmt.Println("value was 40")
+	} else if y == 42 {
+		fmt.Println("Our value was 42")
+	} else {
+		fmt.Println("Our value was not 40")
+	}
 }
