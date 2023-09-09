@@ -40,6 +40,5 @@ func main() {
 			continue
 		}
 		fmt.Println(y)
-
 	}
 }

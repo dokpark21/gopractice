@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	if true {
@@ -33,4 +35,12 @@ func main() {
 	} else {
 		fmt.Println("Our value was not 40")
 	}
+
+	fmt.Println(true && true)
+	fmt.Println(true && false)
+	fmt.Println(true || true)
+	fmt.Println(true || false)
+	fmt.Println(!true)
 }
+
+// && == and, || == or, ! == not,

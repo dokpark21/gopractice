@@ -28,3 +28,9 @@ func main() {
 		fmt.Println("this is default")
 	}
 }
+
+// 만약 switch 뒤에 아무것도 지정되어 있지 않다면 자동으로 true가 된다
+/*
+break case switch fallthrough continue else for if switch var 중요하거나 알아볼 키워드들을 먼저 확인한다
+
+*/

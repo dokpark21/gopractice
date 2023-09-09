@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	//1
 	// for i := 1; i <= 1000; i++ {
@@ -60,11 +58,11 @@ func main() {
 	// }
 
 	//9
-	favSport := "basketball"
-	switch favSport {
-	case "soccer":
-		fmt.Println("your favorite sport is soccer!!")
-	case "basketball":
-		fmt.Println("your favorite sport is basketball")
-	}
+	// favSport := "basketball"
+	// switch favSport {
+	// case "soccer":
+	// 	fmt.Println("your favorite sport is soccer!!")
+	// case "basketball":
+	// 	fmt.Println("your favorite sport is basketball")
+	// }
 }
