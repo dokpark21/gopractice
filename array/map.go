@@ -32,6 +32,11 @@ func main() {
 		fmt.Println("There's no value in map about Barnabas!")
 	}
 
+	//map 원소 삭제하기
+	delete(m, "Kevin")
+	fmt.Println(m)
+
+	// slice 출력
 	xi := []int{4, 5, 6, 7, 8}
 
 	for i, v := range xi {
