@@ -29,4 +29,15 @@ func main() {
 	//만약 설정한 하부 배열 크기를 능가하게 된다면 알아서 증가한다.
 	x = append(x, 123)
 	fmt.Println(cap(x))
+
+	//다차원 슬라이스
+	jb := []string{"James", "Bond", "Steve", "Kevin"}
+	fmt.Println(jb)
+	mp := []string{"Miss", "Moneypenny", "Strawberry", "Hazelnut"}
+	fmt.Println(mp)
+
+	//다차원 슬라이스 생성
+	xp := [][]string{jb, mp}
+	fmt.Println(xp)
+
 }
