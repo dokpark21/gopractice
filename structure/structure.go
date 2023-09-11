@@ -4,6 +4,7 @@ import "fmt"
 
 // tpye 정의 및 내부 자료 타입 선언
 type person struct {
+	// field : 각각의 이름과 타입 명시된 것들
 	first string
 	last  string
 	age   int
@@ -11,8 +12,8 @@ type person struct {
 
 // 임베디드 구조체
 type secretAgent struct {
-	person
-	ltk bool
+	person //익명 필드
+	ltk    bool
 }
 
 func main() {
