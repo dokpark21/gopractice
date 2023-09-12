@@ -5,7 +5,7 @@ import "fmt"
 type person struct {
 	first  string
 	last   string
-	flaver []string
+	flavor []string
 }
 
 type vehicle struct {
@@ -28,7 +28,7 @@ func main() {
 	// p1 := person{
 	// 	first: "Park",
 	// 	last:  "steve",
-	// 	flaver: []string{
+	// 	flavor: []string{
 	// 		"chocolate",
 	// 		"vanilla",
 	// 		"coke",
@@ -38,7 +38,7 @@ func main() {
 	// p2 := person{
 	// 	first: "Lee",
 	// 	last:  "sarah",
-	// 	flaver: []string{
+	// 	flavor: []string{
 	// 		"cookie and cream",
 	// 		"peanut",
 	// 		"soda",
@@ -47,7 +47,7 @@ func main() {
 
 	// fmt.Println(p1.first)
 	// fmt.Println(p1.last)
-	// for i, v := range p1.flaver {
+	// for i, v := range p1.flavor {
 	// 	fmt.Println(i, v)
 	// }
 	// fmt.Println(p2)
