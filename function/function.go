@@ -10,6 +10,11 @@ func main() {
 	x, y := mouse("Ian", "Fleming")
 	fmt.Println("x : ", x)
 	fmt.Println("y : ", y)
+
+	// 익명 함수
+	func(x int) {
+		fmt.Println("Anonymous func ran", x)
+	}(42)
 }
 
 // func (r receiver) identifier (parameters) (return(s)) {...}

@@ -9,6 +9,7 @@ func main() {
 
 }
 
+// sum의 int는 가변 매개변수
 func sum(x ...int) int {
 	sum := 0
 	for i, v := range x {
