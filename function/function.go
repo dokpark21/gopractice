@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	foo()
+	foo(2, 3, 4, 5, 6, 7)
 	bar("Steve")
 	s1 := woo("MoneyPenny")
 	fmt.Println(s1)
@@ -14,8 +14,16 @@ func main() {
 
 // func (r receiver) identifier (parameters) (return(s)) {...}
 
-func foo() {
+func foo(x ...int) {
+	fmt.Println(x)
 	fmt.Println("Hello World!!")
+
+	sum := 0
+	for i, v := range x {
+		sum += v
+		fmt.Println("for item in index position", i, "we are now adding, ", v, "to the total which is now", sum)
+	}
+	fmt.Println("sum : ", sum)
 }
 
 // everything in Go is PASS BY VALUE
