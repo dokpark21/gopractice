@@ -33,6 +33,7 @@ type human interface {
 
 func bar(h human) {
 	// assertion (무언가를 단언함 : 아래에서는 person, secretAgent type인지에 대해 단언하고 있다.)
+	// interface에 포함이 되어있다면 underlying type을 알 수 없기 때문에 돌아가서 단언한다.
 	switch h.(type) {
 	case person:
 		fmt.Println("person", h.(person).first)
@@ -63,3 +64,5 @@ func main() {
 	bar(sa1)
 	bar(p1)
 }
+
+// Go언어에서는 빈 인터페이스를 요구할 때도 존재한다. 

@@ -6,7 +6,6 @@ func main() {
 	xi := []int{2, 3, 4, 5, 6, 7, 8, 9}
 	x := sum(xi...)
 	fmt.Println(x)
-
 }
 
 // sum의 int는 가변 매개변수
