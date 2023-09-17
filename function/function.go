@@ -17,6 +17,7 @@ func main() {
 	}(42)
 
 	// Go에서 함수는 일급객체 : 다른 변수, 다른 타입처럼 똑같이 사용 가능
+	
 	f := func(y int) {
 		fmt.Println("my first func expression", y)
 	}
