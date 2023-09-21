@@ -27,3 +27,5 @@ func main() {
 	}
 	fmt.Printf("%+v", animals)
 }
+
+// 프로그램에 무언가 들어오고 나가자마자 인코딩과 디코딩을 이용해서 그것을 JSON으로 바로 전송 가능하다. Marshal이나 Unmarshal처럼 변수에 할당할 필요는 없다.
