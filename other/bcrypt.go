@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 
 	"golang.org/x/crypto/bcrypt"
@@ -19,5 +20,14 @@ func main() {
 
 	if err != nil {
 		fmt.Println(err)
+	}
+
+	var newBs []person
+
+	err = json.Unmarshal(bs, &newBs)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println("newBs : ", newBs)
 	}
 }
