@@ -19,7 +19,7 @@ func main() {
 
 	for i := 0; i < gs; i++ {
 		go func() {
-			// 코드를 잠궈서 counter 변수에 아무도 접근하지 못하게한다.
+			// 코드를 잠궈서 counter 변수에 아무도 접근하지 못하게한다. == 동시에 여러개의 루틴이 접근 불가능
 			// v++ -> counter = v로 넘어가는 과정에서 만약 다른 go routine이  v:= counter를 실행하게 되면서 값이 늘어난 것이 다시 원상태로 돌아온 것이다.
 			mu.Lock()
 			v := counter
