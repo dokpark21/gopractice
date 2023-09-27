@@ -34,3 +34,6 @@ func main() {
 	fmt.Println("Go routines : ", runtime.NumGoroutine())
 	fmt.Println("Counter : ", counter)
 }
+
+
+// go run -race로 실행해보면 1개의 레이스가 있다. 레이스가 실행되고 있는 이유는 다수의 Go routine이 있기 때문이다.
