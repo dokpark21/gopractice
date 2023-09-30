@@ -53,4 +53,17 @@ func main() {
 	cr = c
 	fmt.Printf("cs\t%T\n", cs)
 	fmt.Printf("cr\t%T\n", cr)
+
+	// 방향성 채널 사용
+
+}
+
+// send
+func foo() {
+
+}
+
+// receive
+func bar() {
+
 }
